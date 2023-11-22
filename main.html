@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Программа сложения двух чисел</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="background_text">
+        <p>Вариант 1</p>
+    </div>
+    <!-- Тест -->
+    <div class="background_text">
+        <p>Тест</p>
+        <input id="a" type="text" value="1" /><br> <!-- Создаёт переменную а типа текст, со значением по умолчанию 1 -->
+        <input id="b" type="text" value="1" /><br>
+        <input type="button" value="Сложить 2 два числа" onclick="slojenie();" /><br />
+        <!-- Делает кнопку с надписью пр и нажатии которой выполняется определённый скрипт в js -->
+        <br>
+        <div id="result" class="col_txt"></div>
+        <!-- Пришет значение из id, придавая ему цвет (не люблю белый фон, поэтому изменил) -->
+    </div>
+    <!-- Задание 1      1.22.а -->
+    <div class="background_text">
+        <p>1.22.а</p><input id="x" type="text" value="1"><br>
+        <button onclick="one_twenty_two__a();">Посчитать</button><br>
+        <br>
+        <div id="result_1" class="col_txt"></div>
+    </div>
+    <!-- Задание 2      1.25 -->
+    <div class="background_text">
+        <p>1.25</p>
+        <input id="storona" type="text" value="1"/><br>
+        <button onclick="one_twenty_five();">Посчитать</button><br>
+        <br>
+        <div id="result_2" class="col_txt"></div>
+    </div>
+    <!-- Задание 3      1.29 -->
+    <div class="background_text">
+        <p>1.29</p>
+        <input id="radius" type="text" value="1"/><br>
+        <button onclick="one_twenty_nine();">Посчитать</button><br>
+        <br>
+        <div id="result_3" class="col_txt"></div>
+        <div id="result_3_1" class="col_txt"></div>
+    </div>
+    <!-- Задание 4      1.31 -->
+    <div class="background_text">
+        <p>1.31</p>
+        <input id="chislo_1" type="text" value="1" /><br>
+        <input id="chislo_2" type="text" value="2" /><br>
+        <button onclick="one_thirty_nine();">Посчитать</button><br>
+        <br>
+        <div id="result_4" class="col_txt"></div>
+    </div>
+    <!-- Задание 5      2.3 -->
+    <div class="background_text">
+        <p>2.3</p>
+        <input placeholder="Введите значение от 1000" id="massa" type="text"/><br>
+        <button onclick="two_three();">Посчитать</button><br>
+        <br>
+        <div id="result_5" class="col_txt"></div>
+    </div>
+    <!-- Задание 6      2.6 -->
+    <div class="background_text">
+        <p>2.6</p>
+        <input id="sec" type="text" value="3604"/><br>
+        <button onclick="two_six();">Посчитать</button><br>
+        <br>
+        <div id="result_6" class="col_txt"></div>
+        <div id="result_6_1" class="col_txt"></div>
+        <div id="result_6_2" class="col_txt"></div>
+    </div>
+    <!-- Задание 7      2.28 -->
+    <div class="background_text">
+        <p>2.28</p>
+        <input id="chislo_3" type="text" value="543"/><br>
+        <button onclick="two_twenty_eight();">Посчитать</button><br>
+        <br>
+        <div id="result_7" class="col_txt"></div>
+
+    </div>
+    <!--  Задание 8    4.16.б -->
+    <div class="background_text">
+        <p>4.16.б</p>
+        <input id="a_1" type="text"/><br>
+        <input id="r_1" type="text"/><br>
+        <button onclick="four_sixteen();">Посчитать</button><br>
+        <br>
+        <div id="result_8" class="col_txt"></div>
+    </div>
+    <!-- // Задание 9    4.28.а -->
+    <div class="background_text">
+        <p>4.28.a</p>
+        <input maxlength="3" type="text" id="numberInput"/><br>
+        <!-- maxlength="3" установил максимальное количество символов для ввода -->
+        <button onclick="compareDigits()">Посчитать</button><br>
+        <br>
+        <p id="result_9"></p>
+        <!-- Подумал что использовать <p> будет правильней чем просто <div>, да и <p> я задал цвет через  css, лишний раз не нужно указывать class="col_txt" -->
+    </div>
+    <!--  -->
+    <!-- // Задание 10   4.33.б -->
+    <div class="background_text">
+        <p>4.33.б</p>
+        <input type="text" id="number_1"/><br>
+        <button onclick="four_thirty_three()">Посчитать</button><br>
+        <br>
+        <p id="result_10"></p>
+    </div>
+    <!-- // Задание 11   4.59.а -->
+    
+    <div class="background_text">
+        <p>4.59.a</p>
+        <input type="text" id="number_2"/><br>
+        <button onclick="four_fifty_nine()">Посчитать</button><br>
+        <br>
+        <p id="result_11"></p>
+    </div>
+    <!-- // Задание 12   4.57.б -->
+    <div class="background_text">
+        <p>4.57.б</p>
+        <input type="text" id="number_3"/><br>
+        <input type="text" id="number_4"/><br>
+        <button onclick="four_fifty_seven()">Посчитать</button><br>
+        <br>
+        <p id="result_12"></p>
+    </div>
+    <!-- // Задание 13   4.104 // оценка 4 -->
+    <div class="background_text">
+        <p>4.57.б</p>
+        <input type="text" id="number_3"/><br>
+        <input type="text" id="number_4"/><br>
+        <button onclick="four_fifty_seven()">Посчитать</button><br>
+        <br>
+        <p id="result_12"></p>
+    </div>
+    <!-- // Задание 14   5.13 -->
+    <div class="background_text">
+        <p>5.13</p><br>
+        <button onclick="four_thirteen()">Посчитать</button><br>
+        <p id="result_13"></p>
+    </div>
+    <!-- // Задание 15   5.27.б -->
+    <!-- // Задание 16   5.48 -->
+    <!-- // Задание 17   6.22.а,в,е -->
+    <!-- // Задание 18   6.54 (делайте с четырехзначным) // оценка 5 -->
+    <!-- // Задание 19   7.2 -->
+    <!-- // Задание 20   7.3 -->
+</body>
+
+</html>
